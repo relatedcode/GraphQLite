@@ -16,10 +16,10 @@ let package = Package(
         .target(
             name: "GraphQLite",
             dependencies: ["GraphQLiteFramework"],
-            path: "GraphQLite"
+            path: "Source/GraphQLite"
         ),
         .binaryTarget(name: "GraphQLiteFramework",
-                      path: "GraphQLite.xcframework"
+                      path: "Framework/GraphQLite.xcframework"
         )
     ]
 )

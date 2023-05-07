@@ -1,0 +1,6 @@
+
+query GetAllData {
+	allPeople {
+		people { id name gender birthYear eyeColor hairColor height mass skinColor created edited }
+	}
+}

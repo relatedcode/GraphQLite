@@ -1,0 +1,32 @@
+
+mutation CreateTodo($object: CreateTodoInput!) {
+  createTodo(input: $object) {
+    objectId, title, completed, deleted, createdAt, updatedAt
+  }
+}
+
+mutation UpdateTodo($object: UpdateTodoInput!) {
+  updateTodo(input: $object) {
+    objectId, title, completed, deleted, createdAt, updatedAt
+  }
+}
+
+query ListTodos($updatedAt: String) {
+  listTodos(filter: {updatedAt: {gt: $updatedAt}}) {
+    items {
+      objectId, title, completed, deleted, createdAt, updatedAt
+    }
+  }
+}
+
+subscription OnCreateTodo {
+  onCreateTodo {
+    objectId, title, completed, deleted, createdAt, updatedAt
+  }
+}
+
+subscription OnUpdateTodo {
+  onUpdateTodo {
+    objectId, title, completed, deleted, createdAt, updatedAt
+  }
+}

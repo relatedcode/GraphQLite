@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseView" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="cellAddCurrency" destination="tMd-r2-v6C" id="bKz-QT-Ofe"/>
+                <outlet property="view" destination="ff1-M6-Ueg" id="yxj-fL-9A2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="60" sectionHeaderHeight="5" sectionFooterHeight="5" id="ff1-M6-Ueg">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="-55" y="-521"/>
+        </tableView>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="tMd-r2-v6C">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tMd-r2-v6C" id="vKQ-Uf-dHg">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ng-U4-Pre">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add another currency" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcp-IU-mmO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kcp-IU-mmO" firstAttribute="top" secondItem="8ng-U4-Pre" secondAttribute="top" id="GSf-ri-rr0"/>
+                            <constraint firstAttribute="trailing" secondItem="Kcp-IU-mmO" secondAttribute="trailing" id="Y5a-S5-WGo"/>
+                            <constraint firstAttribute="bottom" secondItem="Kcp-IU-mmO" secondAttribute="bottom" id="add-WE-wpG"/>
+                            <constraint firstItem="Kcp-IU-mmO" firstAttribute="leading" secondItem="8ng-U4-Pre" secondAttribute="leading" id="qTM-1V-OwU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8ng-U4-Pre" secondAttribute="bottom" id="Brq-kw-AW4"/>
+                    <constraint firstItem="8ng-U4-Pre" firstAttribute="leading" secondItem="vKQ-Uf-dHg" secondAttribute="leading" id="WGV-ig-ytH"/>
+                    <constraint firstAttribute="trailing" secondItem="8ng-U4-Pre" secondAttribute="trailing" id="mc1-2k-qZR"/>
+                    <constraint firstItem="8ng-U4-Pre" firstAttribute="top" secondItem="vKQ-Uf-dHg" secondAttribute="top" id="muD-H8-nUK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="-56" y="-145"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

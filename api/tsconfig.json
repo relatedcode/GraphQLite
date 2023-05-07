@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "allowJs": true
+  },
+  "compileOnSave": true,
+  "include": [
+    "src"
+  ],
+  "exclude": ["node_modules", "src/db/models/**", "models-auto"]
+}

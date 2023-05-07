@@ -1,0 +1,11 @@
+ios-sdk/GraphQLite.xcframework/* linguist-vendored
+
+*.podspec linguist-detectable=false
+
+*.h linguist-detectable=false
+*.plist linguist-detectable=false
+*.swiftdoc linguist-detectable=false
+*.swiftinterface linguist-detectable=false
+*.swiftsourceinfo linguist-detectable=false
+
+*.modulemap linguist-detectable=false

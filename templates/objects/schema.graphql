@@ -1,0 +1,31 @@
+type Object {
+  objectId: String!
+  text: String
+  number: Int
+  double: Float
+  boolean: Boolean
+  createdAt: Date!
+  updatedAt: Date!
+}
+type Subscription {
+  object(objectId: String): Object!
+}
+type Query {
+  objects: [Object]
+}
+type Mutation {
+  createObject(
+    objectId: String!
+    text: String
+    number: Int
+    double: Float
+    boolean: Boolean
+  ): Object!
+  updateObject(
+    objectId: String!
+    text: String
+    number: Int
+    double: Float
+    boolean: Boolean
+  ): Object!
+}

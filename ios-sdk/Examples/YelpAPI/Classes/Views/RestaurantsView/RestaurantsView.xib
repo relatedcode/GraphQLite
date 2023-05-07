@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RestaurantsView" customModule="Yelp" customModuleProvider="target">
+            <connections>
+                <outlet property="activityLoading" destination="C8Y-ZM-W5u" id="MKt-nu-5Gt"/>
+                <outlet property="buttonMore" destination="0yR-de-dOD" id="1sE-xE-JBe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewFooter" destination="X9j-28-GE7" id="k1s-yh-IAK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="insetGrouped" separatorStyle="none" rowHeight="110" sectionHeaderHeight="5" sectionFooterHeight="5" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <viewLayoutGuide key="safeArea" id="vLr-E1-eTs"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
+                <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="129"/>
+        </tableView>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X9j-28-GE7">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="C8Y-ZM-W5u">
+                    <rect key="frame" x="141.5" y="10" width="37" height="37"/>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yR-de-dOD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <state key="normal" title="Load More"/>
+                    <connections>
+                        <action selector="actionLoadMore:" destination="-1" eventType="touchUpInside" id="GeI-ie-VZF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="C8Y-ZM-W5u" firstAttribute="centerX" secondItem="X9j-28-GE7" secondAttribute="centerX" id="75n-JK-BHn"/>
+                <constraint firstAttribute="bottom" secondItem="0yR-de-dOD" secondAttribute="bottom" constant="10" id="HFr-PT-c2W"/>
+                <constraint firstItem="0yR-de-dOD" firstAttribute="leading" secondItem="X9j-28-GE7" secondAttribute="leading" id="dvk-fQ-zIA"/>
+                <constraint firstItem="C8Y-ZM-W5u" firstAttribute="top" secondItem="X9j-28-GE7" secondAttribute="top" constant="10" id="j1n-7A-ozl"/>
+                <constraint firstItem="0yR-de-dOD" firstAttribute="top" secondItem="X9j-28-GE7" secondAttribute="top" id="rXf-DA-Xq3"/>
+                <constraint firstAttribute="trailing" secondItem="0yR-de-dOD" secondAttribute="trailing" id="zDv-HX-Vfm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="887" y="-134"/>
+        </view>
+    </objects>
+</document>

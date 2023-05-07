@@ -1,0 +1,48 @@
+
+query SearchRestaurants($term: String!, $location: String!, $limit: Int!, $offset: Int) {
+	search(term: $term, location: $location, limit: $limit, offset: $offset) {
+		total
+		business {
+			id
+			name
+			alias
+			rating
+			url
+			is_claimed
+			is_closed
+			phone
+			display_phone
+			review_count
+			price
+			location {
+				address1
+				address2
+				address3
+				city
+				state
+				postal_code
+				country
+				formatted_address
+			}
+			coordinates {
+				latitude
+				longitude
+			}
+			reviews {
+				id
+				rating
+				user {
+					id
+					name
+					profile_url
+					image_url
+				}
+				text
+				time_created
+				url
+			}
+			photos
+			distance
+		}
+	}
+}

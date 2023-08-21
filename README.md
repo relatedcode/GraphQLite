@@ -1,7 +1,3 @@
-<a href="https://r9ryvd37cq5.typeform.com/to/E99SDQZx"><img src="https://related.chat/github/header34.png" width="880"></a>
-
----
-
 ![GraphQLite](https://raw.githubusercontent.com/relatedcode/GraphQLite/master/GraphQLite.png)
 
 <p align="center"><strong>Rapid GraphQL prototyping, development, and testing.</strong></p>

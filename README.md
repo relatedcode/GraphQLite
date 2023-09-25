@@ -36,4 +36,4 @@ You can test all the features, by installing our nicely designed, fully function
 
 ---
 
-© Related Code 2022 - All Rights Reserved
+© Related Code 2023 - All Rights Reserved

@@ -1,6 +1,0 @@
-
-query GetLatestUpdate {
-	latest(baseCurrency: "EUR") {
-		baseCurrency quoteCurrency quote date
-	}
-}

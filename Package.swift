@@ -16,7 +16,8 @@ let package = Package(
         .target(
             name: "GraphQLite",
             dependencies: [],
-            path: "./ios-sdk"
+            path: "./ios-sdk",
+            sources: ["Sources"]
         )
     ]
 )
